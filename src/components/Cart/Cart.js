@@ -21,7 +21,7 @@ const Cart = () => {
                 <p><small>Height</small></p>
             </div>
             <div className='age'>
-                <h2>28<small>years</small></h2>
+                <h2>28<small>yrs</small></h2>
                 <p><small>Age</small></p>
             </div>
             </div>

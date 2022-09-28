@@ -10,6 +10,7 @@
 
 .nav-part h1{
     color: #ffffff;
+    margin-left: 20px;
 }
 
 .nav-part a{
@@ -23,4 +24,11 @@
 .nav-part a:hover{
     color: chocolate;
     font-weight: 600;
+}
+
+.nav-title{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
