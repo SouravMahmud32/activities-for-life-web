@@ -1,0 +1,26 @@
+.nav-part{
+    height: 80px;
+    background-color: #1C2B35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 140px;
+    padding-left: 140px;
+}
+
+.nav-part h1{
+    color: #ffffff;
+}
+
+.nav-part a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.nav-part a:hover{
+    color: chocolate;
+    font-weight: 600;
+}
