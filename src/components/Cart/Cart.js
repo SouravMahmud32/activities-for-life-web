@@ -1,7 +1,7 @@
 import React from 'react';
 import './Cart.css';
 
-const Cart = () => {
+const Cart = (props) => {
     let exerciseTime = 0;
     let breakTime = 0;
     return (
@@ -14,7 +14,7 @@ const Cart = () => {
             <div className='body-detail'>
             <div className='weight'>
                 <h2>75<small>kg</small></h2>
-                <p><small>Weight</small></p>
+                <p><small>Weight: {props.cart.length}</small></p>
             </div>
             <div className='height'>
                 <h2>5.7</h2>
