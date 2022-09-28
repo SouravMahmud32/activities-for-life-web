@@ -10,7 +10,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faPersonRunning}></FontAwesomeIcon>
               <h1>Activities for Life</h1>
             </div>
-            <div>
+            <div className='nav-btn'>
                 <a href="/home">Home</a>
                 <a href="/activites">Activities</a>
                 <a href="/about">About</a>
