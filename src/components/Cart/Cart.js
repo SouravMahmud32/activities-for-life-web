@@ -2,11 +2,15 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
+    const {cart} = props;
     let exerciseTime = 0;
     let breakTime = 0;
+    for(const activitiy of cart){
+        exerciseTime = exerciseTime + activitiy.time;
+    }
     return (
-        <div>
-            <div className='cart'>
+        <div className='cart'>
+            <div>
             <div>
               <h3>Xaviar Antony</h3>
               <p>California, USA</p>
@@ -14,7 +18,7 @@ const Cart = (props) => {
             <div className='body-detail'>
             <div className='weight'>
                 <h2>75<small>kg</small></h2>
-                <p><small>Weight: {props.cart.length}</small></p>
+                <p><small>Weight</small></p>
             </div>
             <div className='height'>
                 <h2>5.7</h2>
@@ -45,8 +49,8 @@ const Cart = (props) => {
                 </div>
             </div>
             <h3>Duration of Activity:</h3>
-            <p>Activity Time: ${exerciseTime}</p>
-            <p>Break Time: ${breakTime}</p>
+            <p>Activity Time: {exerciseTime}m</p>
+            <p>Break Time: {breakTime}s</p>
             <button className='btn-activity'>Activity Completed</button>
         </div>
         </div>
