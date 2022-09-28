@@ -4,6 +4,11 @@
     padding: 30px 20px;
 }
 
+.user-info img{
+    width: 100px;
+    border-radius: 50%;
+}
+
 .body-detail{
     display: flex;
 }
