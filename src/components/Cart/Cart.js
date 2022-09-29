@@ -9,8 +9,6 @@ const Cart = (props) => {
     let exerciseTime = 0;
     const [duration, setDuration] = useState(0);
     const setBreakTime = (time) =>{
-        console.log('clicked');
-        console.log(typeof duration);
         setDuration(time);
         localStorage.setItem('break', time);
     }
@@ -60,7 +58,7 @@ const Cart = (props) => {
             </div>
             <h3>Duration of Activity:</h3>
             <p>Activity Time: {exerciseTime}m</p>
-            <p>Break Time: {localStorage.getItem('break')?localStorage.getItem('break'):duration}</p>
+            <p>Break Time: {localStorage.getItem('break')?localStorage.getItem('break'):duration}<small>s</small></p>
             <button onClick={notify} className='btn-activity'>Activity Completed</button>
             <ToastContainer></ToastContainer>
         </div>

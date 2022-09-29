@@ -12,7 +12,6 @@ const Activities = () => {
         .then(data => setActivities(data))
     }, []);
     const handleAddToCart = (activity) =>{
-        console.log(activity);
         const newCart = [...cart, activity];
         setCart(newCart);
     }
